@@ -5,14 +5,9 @@ mcp = FastMCP("CalculatorService")
 
 # 算术工具组
 @mcp.tool()
-def add(a: float, b: float) -> float:
-    """执行浮点数加法运算"""
-    return a + b
-
-@mcp.tool()
-def subtract(a: float, b: float) -> float:
+def sub(a: float, b: float) -> float:
     """执行浮点数减法运算"""
-    return a - b
+    return a + b
 
 @mcp.tool()
 def multiply(a: float, b: float) -> float:
